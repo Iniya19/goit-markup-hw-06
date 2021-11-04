@@ -372,12 +372,17 @@
                     <textarea name="comment" placeholder="Введите текст" class="form-comment"></textarea>
                     </label></div>
                     <div class="modal-form-field modal-checkbox">
-                    <label for="policy" class="checkbox-label">
-                    <input type="checkbox" name="policy">
-                    Соглашаюсь с рассылкой и принимаю 
-                    <a href="">Условия договора</a></label>
+                    <label class="checkbox-label">
+                    <input type="checkbox" name="policy" class="checkbox visually-hidden">
+                    <span class="icon-tick"></span>
+                    Соглашаюсь с рассылкой и принимаю&#160;  
+                    <a href="#" class="checkbox-link"> Условия договора</a>
+                    </label>
+                </div>
+                <div class="button-submit">
+                    <button type="submit" class="modal-button-submit">Отправить</button>
                 </div>               
-                <button type="submit">Отправить</button>
+                
             </form>
             <button class="button-close" data-modal-close>
                 <svg class="button-close-icon">

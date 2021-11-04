@@ -289,13 +289,13 @@ header {
 }
 .form-comment {
     padding: 12px 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 4px;
     height: 120px;
     font-size: 12px;
-    line-height: 1.167;
+    line-height: 1.16;
     letter-spacing: 0.01em;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+        border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
@@ -306,21 +306,63 @@ header {
     outline: none;
     border: 1px solid var(--title-first-color)
 }
-.modal-checkbox {
+.form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+.checkbox-label {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: #757575;
 }
-.checkbox {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+.icon-tick {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 8.38px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    transition: border var(--animation-duration) var(--animation-timing-function);
+}
+.checkbox:checked + .icon-tick {
+    background-color: var(--title-first-color);
+    background-image: url(../images/tick.svg);
+    background-size: contain;
+    border-color: var(--title-first-color);
+}
+.checkbox-link {
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+.button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    color: var(--buttom-text-color);
+    background-color: var(--title-first-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: color var(--animation-duration) var(--animation-timing-function);
 }
 .button-close {
     display: flex;
@@ -332,6 +374,7 @@ header {
     border-radius: 50%;
     width: 30px;
     height: 30px;
+    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 }
@@ -344,11 +387,11 @@ header {
 }
 /*about-company*/
 .visually-hidden {
-        position: absolute;
-        clip: rect(0 0 0 0);
-        width: 1px;
-        height: 1px;
-        margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
  }
 .about-company-list {
     display: flex;
