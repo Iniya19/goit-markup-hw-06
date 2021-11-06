@@ -589,7 +589,7 @@ header {
     align-items: baseline;
 }
 .footer-contacts {
-    margin-right: 70px;
+    flex-grow: 1;
 }
 .bottom {
     margin-bottom: 20px;
